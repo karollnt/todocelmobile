@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.todoapp.todocel"
+        id        = "com.saleapp.salephone"
         version   = "0.1.0">
 
     <name>Salephone</name>
@@ -12,7 +12,7 @@
        Front-end para Salephone
     </description>
 
-    <author href="http://phonegap.com" email="info@waooapp.com">
+    <author href="http://salephone.com" email="info@salephone.com">
         Karoll Navas
     </author>
 

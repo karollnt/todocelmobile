@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.todoapp.todocel;
+package com.saleapp.salephone;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

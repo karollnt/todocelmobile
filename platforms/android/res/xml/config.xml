@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.todoapp.todocel" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.saleapp.salephone" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
@@ -15,7 +15,7 @@
     <description>
        Front-end para Salephone
     </description>
-    <author email="info@waooapp.com" href="http://phonegap.com">
+    <author email="info@salephone.com" href="http://salephone.com">
         Karoll Navas
     </author>
     <content src="index.html" />
