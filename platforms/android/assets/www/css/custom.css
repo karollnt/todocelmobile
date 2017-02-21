@@ -1,0 +1,53 @@
+/* custom styles */
+.button {
+  width: 100%;
+}
+
+.shop_header_title h2 {
+  width: 80%;
+}
+.product-list-cart-link {
+  background-color: inherit !important;
+  width: auto !important;
+}
+.product-list-cart-img {
+  max-height: 32px;
+  max-width: 32px;
+}
+.text-right {
+  text-align: right;
+}
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  border-top: 1px solid #ddd;
+  line-height: 1.42857143;
+  padding: 8px;
+  vertical-align: top;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+}
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+  border: 1px solid #ddd;
+}
+input.qntyshop {
+  background: #f0f0f0;
+  padding: 0px 4px;
+}
+.shop-categories-list {
+  padding: 0;
+}
+.back-to-shop a {
+  color: inherit;
+  float: inherit;
+  font-size: 14px;
+  padding: 10px;
+  text-align: left;
+  width: initial;
+}

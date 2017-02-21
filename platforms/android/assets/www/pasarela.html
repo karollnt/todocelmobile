@@ -1,0 +1,104 @@
+<div class="pages">
+  <div data-page="success" class="page no-toolbar no-navbar">
+    <div class="page-content">
+      <div class="navbarpages js-main-nav">
+        <div class="navbar_left"><a href="#" data-link="index.html" class="js-nav-item"><img src="images/icons/yellow/menu.png" alt="" title="" /></a></div>
+        <div class="navbar_center"><h2><a href="#" data-link="index.html" class="js-nav-item">Salephone</a></h2></div>
+        <!-- <div class="navbar_right"><a href="#" data-link="index.html" data-panel="right" class="open-panel"><img src="images/icons/yellow/user.png" alt="" title="" /></a></div> -->
+      </div>
+      <div id="pages_maincontent">
+        <div class="page_content">
+          <form class="js-enviarPago table-responsive" method="post">
+            <h4 class="checkout_title">DETALLES DE FACTURACION</h4>
+            <div class="contactform">
+              <div class="form_row">
+                <div class="form_row_icon"><img src="images/icons/yellow/user.png" alt="" title="" /></div>
+                <input type="text" name="nombre" id="cardholderName" data-checkout="cardholderName" value="" class="form_input required" placeholder="nombre"/>
+              </div>
+              <div class="form_row row">
+                <div class="form_row_icon"><img src="images/icons/yellow/user.png" alt="" title="" /></div>
+                <div class="col-50">
+                  <input type="text" id="docNumber" data-checkout="docNumber" value="" class="js-numId form_input required" placeholder="Numero identificacion"/>
+                </div><!--
+                --><div class="col-40 js-tipoId-td"></div>
+              </div>
+              <div class="form_row">
+                <div class="form_row_icon"><img src="images/icons/yellow/contact.png" alt="" title="" /></div>
+                <input type="text" name="email" value="" class="js-email form_input required email" placeholder="email"/>
+              </div>
+              <div class="form_row">
+                <div class="form_row_icon"><img src="images/icons/yellow/mobile.png" alt="" title="" /></div>
+                <input type="text" name="telefono" value="" class="form_input required mobile" placeholder="celular"/>
+              </div>
+              <div class="form_row">
+                <div class="form_row_icon"><img src="images/icons/yellow/briefcase.png" alt="" title="" /></div>
+                <input type="text" name="empresa" value="" class="form_input required mobile" placeholder="empresa"/>
+              </div>
+              <div class="form_row">
+                <div class="form_row_icon"><img src="images/icons/yellow/map.png" alt="" title="" /></div>
+                <input type="text" name="direccion" class="form_input required" placeholder="Direccion de envio">
+              </div>
+              <div class="row form_row">
+                <div class="col-100 tablet-50">
+                  <div class="form_row_icon"><img src="images/icons/yellow/next.png" alt="" title="" /></div>
+                  <input type="text" id="cardNumber" name="cardNumber" data-checkout="cardNumber" value="" class="js-cardNumber form_input" placeholder="N&uacute;mero de tarjeta (si el tipo de pago es con tarjeta)">
+                </div>
+                <div class="col-100 tablet-50">
+                  <div class="form_row_icon"><img src="images/icons/yellow/next.png" alt="" title="" /></div>
+                  <input type="text" id="securityCode" name="securityCode" data-checkout="securityCode" value="" class="js-securityCode form_input" pattern="[0-9]{3}" placeholder="C&oacute;digo de seguridad de tarjeta (si el tipo de pago es con tarjeta cr&eacute;dito)">
+                </div>
+              </div>
+              <div class="col-100 form_row">
+                <div class="form_row_icon"><img src="images/icons/yellow/settings.png" alt="" title="" /></div>
+                <div class="js-tipoPago"></div>
+              </div>
+              <div class="row form_row">
+                <div class="col-50">
+                  Mes expira <br/>
+                  <select class="js-expirationMonth form_select" id="cardExpirationMonth" name="cardExpirationMonth" data-checkout="cardExpirationMonth"></select>
+                </div>
+                <div class="col-50">
+                  A&ntilde;o expira <br/>
+                  <select class="js-expirationYear form_select" id="cardExpirationYear" name="cardExpirationYear" data-checkout="cardExpirationYear"></select>
+                </div>
+              </div>
+              <div class="form_row searchbar-not-found">
+                <select class="js-cuotas form_select" id="installments" name="installments" placeholder="cuotas"></select>
+                <select class="js-issuer form_select" name="issuer"></select>
+              </div>
+              <div class="row form_row">
+                <div class="col-50">
+                  Subtotal
+                </div>
+                <div class="col-50 js-checkout-subtotal"></div>
+              </div>
+              <!-- <div class="row form_row">
+                <div class="col-50">
+                  IVA (19%)
+                </div>
+                <div class="col-50 js-checkout-vat"></div>
+              </div> -->
+              <div class="row form_row">
+                <div class="col-50">
+                  Total
+                </div>
+                <div class="col-50 js-checkout-total"></div>
+                <input type="hidden" name="valor" value="0" class="js-checkout-valor">
+              </div>
+              <div class="row form_row">
+                <div class="col-50">
+                  <button type="submit" class="button button-big js-send-payment" data-loading-text="Procesando...">
+                    <i class="fa fa-money" aria-hidden="true"></i> Aceptar
+                  </button>
+                </div>
+                <div class="col-50">
+                  <button type="button" class="button button-big" onclick="cargaPagina('index.html',0);">Cancelar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
