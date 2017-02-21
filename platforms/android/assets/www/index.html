@@ -309,7 +309,15 @@
       </div>
     </script>
     <script id="shopCategoriesItem" type="text/x-handlebars-template">
-      <li><a href="#" data-id="{{id}}" data-sub="{{tieneSub}}" class="js-view-category">{{nombre}}</a></li>
+      <li>
+        <a href="#" data-id="{{id}}" data-sub="{{tieneSub}}" class="js-view-category">
+          {{#if tieneImagen}}
+            <img src="{{imagen}}" alt="{{nombre}}" title="{{nombre}}" />
+            <br>
+          {{/if}}
+          {{nombre}}
+        </a>
+      </li>
     </script>
   </body>
 </html>
