@@ -311,10 +311,8 @@
     <script id="shopCategoriesItem" type="text/x-handlebars-template">
       <li>
         <a href="#" data-id="{{id}}" data-sub="{{tieneSub}}" class="js-view-category">
-          {{#if tieneImagen}}
-            <img src="{{imagen}}" alt="{{nombre}}" title="{{nombre}}" />
-            <br>
-          {{/if}}
+          <img src="{{#if tieneImagen}}{{imagen}}{{else}}images/mobile.png{{/if}}" alt="{{nombre}}" title="{{nombre}}" />
+          <br>
           {{nombre}}
         </a>
       </li>
