@@ -16,6 +16,7 @@ var todocel = (function () {
     todocel.config.$document
       .on('click','.js-open-cart',todocel.cartHandler.init)
       .on('click','.js-view-order-detail',todocel.payments.orderDetail)
+      .on('click','.js-facebook-share',todocel.products.shareImage)
       .on('submit','.js-login-form',todocel.users.login)
       .on('submit','.js-register-form',todocel.users.register);
   };
@@ -330,9 +331,16 @@ todocel.products = (function () {
     return html;
   };
 
+  var shareImage = function (ev) {
+    var imagelink = $('.js-product-image').prop('src');
+    var url = 'https://www.facebook.com/sharer/sharer.php?u='+imagelink;
+    $('.js-facebook-link').prop('href',url).prop('target','_blank');
+  };
+
   return {
     init: init,
-    listCategories: listCategories
+    listCategories: listCategories,
+    shareImage: shareImage
   };
 })();
 

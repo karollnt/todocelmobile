@@ -172,7 +172,7 @@
         <h4>S&iacute;guenos</h4>
         <p>Entra a nuestras redes sociales y comunicate con nosotros</p>
         <ul class="popup_categories">
-          <li><a href="http://www.facebook.com/salephonebq" class="external"><img src="images/icons/yellow/facebook.png" alt="" title="" /><span>Facebook</span></a></li>
+          <li><a href="http://www.facebook.com/salephonebq" class="external js-facebook-link"><img src="images/icons/yellow/facebook.png" alt="" title="" /><span>Facebook</span></a></li>
           <li><a href="http://www.instagram.com/salephonebq" class="external"><img src="images/icons/yellow/instagram.png" alt="" title="" /><span>Instagram</span></a></li>
           <!-- <li><a href="http://plus.google.com" class="external"><img src="images/icons/yellow/gplus.png" alt="" title="" /><span>GOOGLE</span></a></li>
           <li><a href="http://www.dribbble.com/" class="external"><img src="images/icons/yellow/dribbble.png" alt="" title="" /><span>DRIBBBLE</span></a></li>
@@ -240,9 +240,9 @@
     <script id="shopProductDetails" type="text/x-handlebars-template">
       <div class="shop_item">
         <div class="shop_thumb" style="left: 0px; opacity: 1;">
-          <a rel="gallery-3" href="{{archivo}}" title="{{nombre}}" class="swipebox"><img src="{{archivo}}" alt="" title="" /></a>
+          <a rel="gallery-3" href="{{archivo}}" title="{{nombre}}" class="swipebox"><img src="{{archivo}}" alt="" title="" class="js-product-image"/></a>
           <div class="shop_item_price" style="right: 10px; opacity: 1;">{{precio}}</div>
-          <a href="#" data-popup=".popup-social" class="open-popup shopfav" style="width: 10%; opacity: 1;"><img src="images/icons/yellow/love.png" alt="" title="" /></a>
+          <a href="#" data-popup=".popup-social" class="open-popup shopfav js-facebook-share" style="width: 10%; opacity: 1;"><img src="images/icons/yellow/love.png" alt="" title="" /></a>
           <!-- <a href="#" data-popup=".popup-social" class="open-popup shopfriend" style="width: 10%; opacity: 1;"><img src="images/icons/yellow/users.png" alt="" title="" /></a> -->
         </div>
         <div class="shop_item_details">
