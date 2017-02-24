@@ -288,6 +288,7 @@ todocel.products = (function () {
     if (product) {
       var source = $('#shopProductDetails').html();
       var template = Handlebars.compile(source);
+      product.descripcion = product.descripcion.replace(/(?:\r\n|\r|\n)/g, '<br/>');
       html = template(product);
     }
     return html;
