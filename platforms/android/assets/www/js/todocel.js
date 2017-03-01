@@ -17,6 +17,7 @@ var todocel = (function () {
       .on('click','.js-open-cart',todocel.cartHandler.init)
       .on('click','.js-view-order-detail',todocel.payments.orderDetail)
       .on('click','.js-facebook-share',todocel.products.shareImage)
+      .on('click','.js-terms',todocel.general.closeModals)
       .on('submit','.js-login-form',todocel.users.login)
       .on('submit','.js-register-form',todocel.users.register);
   };
@@ -24,6 +25,19 @@ var todocel = (function () {
   return {
     config: config,
     init: init
+  };
+})();
+
+todocel.general = (function () {
+  var closeModals = function (ev) {
+    ev.preventDefault();
+    myApp.closeModal('.popup-signup');
+    myApp.closeModal('.popup-signup2');
+    myApp.closeModal('.popup-login');
+  };
+
+  return {
+    closeModals: closeModals
   };
 })();
 
