@@ -740,7 +740,8 @@ todocel.users = (function () {
   return {
     init: init,
     verifyLoggedIn: verifyLoggedIn,
-    login: login
+    login: login,
+    register: register
   };
 })();
 
