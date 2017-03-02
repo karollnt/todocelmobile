@@ -596,6 +596,8 @@ todocel.payments = (function () {
         alert(reason);
       }
       else {
+        form.token = resp.id;
+        form.nickname = todocel.config.user;
         todocel.cartHandler.createOrder(form);
       }
     });
