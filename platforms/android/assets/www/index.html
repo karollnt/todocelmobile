@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/swipebox.css" />
     <link rel="stylesheet" href="css/animations.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
   </head>
   <body id="mobile_wrap">
     <div class="statusbar-overlay"></div>
@@ -31,7 +31,11 @@
             <div class="carttotal_left">Subtotal</div> <div class="carttotal_right js-cart-subtotal">$ 0.00</div>
           </div>
           <!-- <div class="carttotal_row">
-            <div class="carttotal_left">IVA (19%)</div> <div class="carttotal_right js-cart-vat">$ 198.00</div>
+            <div class="carttotal_left">
+              Otros cargos<br>
+              <span class="carttotal_extra-info">(pago seguro mercapago 4.95%)</span>
+            </div>
+            <div class="carttotal_right js-cart-vat">$ 0.00</div>
           </div> -->
           <div class="carttotal_row_last">
             <div class="carttotal_left">Total</div> <div class="carttotal_right js-cart-total">$ 0.00</div>
@@ -264,19 +268,31 @@
     </script>
     <script id="orderListElement" type="text/x-handlebars-template">
       <li>
-        <h4><a href="#" data-id="{{id}}" class="js-view-order-detail">&gt; Orden {{id}}</a></h4>
+        <h4><a href="#" data-id="{{id}}" class="js-view-order-detail" data-type="{{tipo}}">&gt; Orden {{numero}}</a></h4>
         <p>
           Fecha: {{fecha}}<br>
-          Valor: ${{valor}}
+          Valor: ${{valor}}<br>
+          Estado: {{estado}}
         </p>
       </li>
     </script>
     <script id="orderDetail" type="text/x-handlebars-template">
-      <h4>Orden {{idVenta}}</h4>
+      <h4>Orden {{numero}}</h4>
       <p>
         Fecha: {{fecha}}<br>
-        Valor: ${{valor}}
+        Valor: ${{valor}}<br>
+        Estado: {{estado}}
       </p>
+      {{#if permiteCargaComprobante}}
+        <div class="push--bottom">
+          <form class="js-send-document" method="post">
+            <h5>Enviar comprobante</h5>
+            <input type="hidden" name="id" value="{{idVenta}}">
+            <input type="file" name="archivo" placeholder="Seleccione archivo"><!--
+            --><button type="submit" class="button" name="enviar">Enviar</button>
+          </form>
+        </div>
+      {{/if}}
       <div>
         <table class="table table-bordered">
           <tr>
