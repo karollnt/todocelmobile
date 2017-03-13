@@ -57,3 +57,6 @@ input.qntyshop {
 .push--bottom {
   margin-bottom: 10px;
 }
+.hide {
+  display: none;
+}
